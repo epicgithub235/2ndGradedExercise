@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(num){
+            if (isNaN(num)){
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        function determineTriangle(a,b,c){
+            let counter = 0
+            if (a==b){
+                counter++
+            }
+            if (a==c){
+                counter++
+            }
+            if (b==c){
+                counter++
+            }
+            if (counter==0){
+                window.alert('This triangle is SCALENE')
+            }
+            if (counter==1){
+                window.alert('This triangle is ISOSCELES')
+            }
+            if (counter==3){
+                window.alert('This triangle is EQUILATERAL')
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        for (i=false;i==false;){
+            var num1 = prompt('Enter the first number')
+            if (check(num1)==true){
+                i = true;
+            }
+            else{
+                alert('That is not a number please try again')
+            }
+        }
+        for (i=false;i==false;){
+            var num2 = prompt('Enter the second number')
+            if (check(num2)==true){
+                i = true;
+            }
+            else{
+                alert('That is not a number please try again')
+            }
+        }
+        for (i=false;i==false;){
+            var num3 = prompt('Enter the third number')
+            if (check(num3)==true){
+                i = true;
+            }
+            else{
+                alert('That is not a number please try again')
+            }
+        }
+        determineTriangle(num1,num2,num3)
+    </script>
+</body>
+</html>
